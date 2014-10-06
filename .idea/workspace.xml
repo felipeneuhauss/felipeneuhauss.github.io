@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="460be2a0-4c8e-445c-b988-c9e164b1b4c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-10-05-php-oracle-varias-coordenadas.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-03-10-sample-post.md" afterPath="$PROJECT_DIR$/_drafts/2011-03-10-sample-post.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-05-22-readability-post.md" afterPath="$PROJECT_DIR$/_drafts/2012-05-22-readability-post.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-05-22-sample-post-images.md" afterPath="$PROJECT_DIR$/_drafts/2013-05-22-sample-post-images.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-05-23-readability-feature-post.md" afterPath="$PROJECT_DIR$/_drafts/2013-05-23-readability-feature-post.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-06-25-video-post.md" afterPath="$PROJECT_DIR$/_drafts/2013-06-25-video-post.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-08-12-sample-link-post.md" afterPath="$PROJECT_DIR$/_drafts/2013-08-12-sample-link-post.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-08-16-code-highlighting-post.md" afterPath="$PROJECT_DIR$/_drafts/2013-08-16-code-highlighting-post.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-10-26-background-image.md" afterPath="$PROJECT_DIR$/_drafts/2013-10-26-background-image.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-09-18-welcome-to-jekyll.markdown" afterPath="$PROJECT_DIR$/_drafts/2014-09-18-welcome-to-jekyll.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.min.css" afterPath="$PROJECT_DIR$/assets/css/main.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -41,16 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="post-index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/post-index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="317" max-vertical-offset="855">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -61,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-10-05-php-oracle-varias-coordenadas.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2014-10-05-php-oracle-varias-coordenadas.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-10-05-php-oracle-varias-coordenadas.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24193548" vertical-offset="0" max-vertical-offset="2130">
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="2130">
               <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
               <folding />
             </state>
@@ -77,8 +55,18 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.375" vertical-offset="240" max-vertical-offset="825">
-              <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="825">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1845">
+              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -87,18 +75,18 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5037" max-vertical-offset="79860">
-              <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="358" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4842" max-vertical-offset="79665">
+              <caret line="345" column="1" selection-start-line="345" selection-start-column="1" selection-end-line="345" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.min.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.min.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/main.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="405">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.3529412" vertical-offset="0" max-vertical-offset="340">
+              <caret line="8" column="37720" selection-start-line="8" selection-start-column="37720" selection-end-line="8" selection-end-column="37720" />
               <folding />
             </state>
           </provider>
@@ -174,9 +162,9 @@
         <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-10-05-php-oracle-varias-coordenadas.md" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/assets/css/main.min.css" />
-        <option value="$PROJECT_DIR$/_posts/2014-10-05-php-oracle-varias-coordenadas.md" />
       </list>
     </option>
   </component>
@@ -603,13 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1845">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sitemap.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
@@ -804,39 +785,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.375" vertical-offset="240" max-vertical-offset="825">
-          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5037" max-vertical-offset="79860">
-          <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="358" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="405">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-10-05-php-oracle-varias-coordenadas.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24193548" vertical-offset="0" max-vertical-offset="2130">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="2130">
           <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1845">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="825">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4842" max-vertical-offset="79665">
+          <caret line="345" column="1" selection-start-line="345" selection-start-column="1" selection-end-line="345" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3529412" vertical-offset="0" max-vertical-offset="340">
+          <caret line="8" column="37720" selection-start-line="8" selection-start-column="37720" selection-end-line="8" selection-end-column="37720" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

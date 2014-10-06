@@ -345,19 +345,6 @@ figcaption {
           border-radius: 3px;
 }
 
-.info {
-    padding: .5em 1em;
-    margin-top: 1.5em;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-indent: 0;
-    background-color: #F7F7F9;
-    border: 1px solid #b5b5b5;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-
 blockquote {
   padding-left: 20px;
   font-family: serif;
