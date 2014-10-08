@@ -2,7 +2,7 @@
 layout: post
 title: SDO_GEOMETRY(wkt CLOB, srid NUMBER DEFAULT NULL) + ORACLE + PHP (oci).
 description: "Nesse post, vou mostrar como salvar mais de 999 registros em um campo SDO_GEOMETRY usando o PHP e as funções de OCI."
-modified: 2014-05-10
+modified: 2014-08-10
 tags: [php, oci, sdo_geometry, coordenadas, oci_new_descriptor, CLOB]
 image:
   feature: abstract-3.jpg
@@ -135,3 +135,5 @@ Outros formatos em wkt você pode ver em <a href='http://en.wikipedia.org/wiki/W
 `POLYGON ((35 10, 45 45, 15 40, 10 20, 35 10),(20 30, 35 35, 30 20, 20 30))`
 
 Bom pessoa, qualquer problema, só comentar.
+
+Aquele abraço!
