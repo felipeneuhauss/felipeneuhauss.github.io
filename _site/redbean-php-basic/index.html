@@ -1,0 +1,337 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Redbean ORM PHP - Uso básico &#8211; felipeneuhauss</title>
+<meta name="description" content="Neste post vou apresentar um pouco do RedBeanPHP, um ORM poderoso para aplicações rápidas.">
+<meta name="keywords" content="php, RedBean PHP, ORM">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Redbean ORM PHP - Uso básico">
+<meta property="og:description" content="Neste post vou apresentar um pouco do RedBeanPHP, um ORM poderoso para aplicações rápidas.">
+<meta property="og:url" content="http://felipeneuhauss.github.io/redbean-php-basic/">
+<meta property="og:site_name" content="felipeneuhauss">
+
+
+
+
+
+<link rel="canonical" href="http://felipeneuhauss.github.io/redbean-php-basic/">
+<link href="http://felipeneuhauss.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="felipeneuhauss Feed">
+<link rel="author" href="https://google.com/+yourid?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://felipeneuhauss.github.io/assets/css/main.min.css">
+<!-- Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://felipeneuhauss.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://felipeneuhauss.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://felipeneuhauss.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://felipeneuhauss.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://felipeneuhauss.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://felipeneuhauss.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://felipeneuhauss.github.io/images/apple-touch-icon-144x144-precomposed.png">
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55641666-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+</head>
+
+<body id="post" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Abrir Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://felipeneuhauss.github.io">Home</a></li>
+		<li>
+			<a href="#">Sobre</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://felipeneuhauss.github.io/images/avatar.png" alt="Felipe Neuhauss photo" class="author-photo">
+					<h4>Felipe Neuhauss</h4>
+					<p>Bacharel em Sistemas de Informações, com especialização em Gerenciamento de Projetos - PMBoK. Possui mais de 7 anos de experiência em TI trabalhando na pesquisa, planejamento, análise e desenvolvimento de sistemas e aplicativos web em empresas e organizações como: Tribunal de Contas da União, Receita Federal, Centro de Apoio ao Desenvolvimento Tecnológico da Universidade de Brasília, Ministério da Educação, General Motors, Grupo JBS Friboi, Flora Higiene e Limpeza, CDS - Condomínio de Soluções Corporativas e Grupo 954. Participou como co-founder da Izie, uma Startup Brasileira focada no mercado de soluções para a Venda Direta.</p>
+				</li>
+				<li><a href="http://felipeneuhauss.github.io/about/">Leia mais</a></li>
+				<li>
+					<a href="mailto:felipe.neuhauss@gmail.com"><i class="fa fa-envelope"></i> Email</a>
+				</li>
+				
+				<li>
+					<a href="http://facebook.com/felipeneuhauss"><i class="fa fa-facebook"></i> Facebook</a>
+				</li>
+				<li>
+					<a href="https://google.com/+yourid"><i class="fa fa-google-plus"></i> Google+</a>
+				</li>
+				<li>
+					<a href="http://linkedin.com/in/br.linkedin.com/in/felipeneuhauss/"><i class="fa fa-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="http://github.com/felipe"><i class="fa fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://felipeneuhauss.github.io/posts/">Todos os Posts</a></li>
+				<li><a href="http://felipeneuhauss.github.io/tags/">Todas as Tags</a></li>
+			</ul>
+		</li>
+		<li><a href="http://felipeneuhauss.github.io/theme-setup">Theme Setup</a></li><li><a href="http://mademistakes.com" target="_blank">External Link</a></li>
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+<div class="entry-header">
+  <!---->
+    
+  <div class="entry-image">
+    <img src="http://felipeneuhauss.github.io/images/abstract-3.jpg" alt="Redbean ORM PHP - Uso básico">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="http://felipeneuhauss.github.io/redbean-php-basic/" rel="bookmark" title="Redbean ORM PHP - Uso básico">Redbean ORM PHP - Uso básico</a></h1>
+        
+        <h2>October 08, 2014</h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+          Reading time ~3 minutes
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>O RedBean PHP é um ORM que tem me consquistado. Não só pela facilidade de se trabalhar com ele, mas por ser poderoso
+na construção de aplicativos de forma muito rápida. Nesse post vou mostrar como utilizá-lo. Mais informações acesse
+<a href="http://redbeanphp.com">http://redbeanphp.com</a>.</p>
+
+<p>Por enquanto esqueça modelagem de dados. Talvez você use apenas um mapa mental pra mostrar os relacionamentos entre as entidades e saber
+como seu projeto está crescrendo.</p>
+
+<div style="width:300px; position:relative; margin: 0 auto;">
+    <iframe src="//giphy.com/embed/D0EjguuQzYr9m" width="250" height="166.5" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+<p>Depois que você fizer o download insira no seu projeto:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="k">require</span> <span class="s1">&#39;rb.php&#39;</span><span class="p">;</span></code></pre></div>
+
+<p>A única coisa que você vai precisar criar é o banco. Agora faça a configuração do banco.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="k">require</span> <span class="s1">&#39;rb.php&#39;</span><span class="p">;</span>
+
+    <span class="nx">R</span><span class="o">::</span><span class="na">setup</span><span class="p">(</span><span class="s1">&#39;mysql:host=localhost;dbname=mydatabase&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;user&#39;</span><span class="p">,</span><span class="s1">&#39;password&#39;</span><span class="p">);</span> <span class="c1">// MySQL connection</span></code></pre></div>
+
+<h3 id="crud-no-redbean-php">CRUD no RedBean PHP</h3>
+
+<h4 id="insert">Insert</h4>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="k">require</span> <span class="s1">&#39;rb.php&#39;</span><span class="p">;</span>
+
+    <span class="nx">R</span><span class="o">::</span><span class="na">setup</span><span class="p">(</span><span class="s1">&#39;mysql:host=localhost;dbname=mydatabase&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;user&#39;</span><span class="p">,</span><span class="s1">&#39;password&#39;</span><span class="p">);</span> <span class="c1">//for both mysql</span>
+    <span class="c1">// Cria uma nova instancia pra entidade livro</span>
+    <span class="nv">$book</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span> <span class="s1">&#39;book&#39;</span> <span class="p">);</span>
+
+    <span class="c1">// Adicione algumas propriedades</span>
+    <span class="nv">$book</span><span class="o">-&gt;</span><span class="na">title</span> <span class="o">=</span> <span class="s1">&#39;Learn to Program&#39;</span><span class="p">;</span>
+    <span class="nv">$book</span><span class="o">-&gt;</span><span class="na">rating</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+
+    <span class="c1">// Voce pode usar a notacao em forma de array tambem</span>
+    <span class="nv">$book</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">29.99</span>
+
+    <span class="c1">// ..e... salve no banco</span>
+    <span class="nv">$id</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">store</span><span class="p">(</span> <span class="nv">$book</span> <span class="p">);</span></code></pre></div>
+
+<p>Automaticamente, o RedBean criará a tabela <code>book</code>, com os campos no formato que você inseriu. Isso é lindo!</p>
+
+<p>Infelizmente, na versão atual em que escrevo este post (RedBean - 4.1), o RedBean possui a limitação de se trabalhar com <code>SCHEMAS</code>.</p>
+
+<p>Por convensão, o nome das tabelas deve seguir a seguintes regras:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="nv">$page</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">);</span> <span class="c1">//Valido</span>
+    <span class="nv">$page</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span> <span class="s1">&#39;Page&#39;</span> <span class="p">);</span> <span class="c1">//Invalido: uppercase</span>
+    <span class="nv">$page</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span> <span class="s1">&#39;cms_page&#39;</span> <span class="p">);</span> <span class="c1">//Invalido: _ Obs: O redbean usa underscore para tabelas relacionais</span>
+    <span class="nv">$page</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span> <span class="s1">&#39;@#!&#39;</span> <span class="p">);</span> <span class="c1">// Invalido</span></code></pre></div>
+
+<h3 id="update">Update</h3>
+
+<p>Para atualizar um registro, é muito simples. Veja:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+
+    <span class="c1">// Se o bean nao existir, uma nova entidade sera retornada com o ID 0.</span>
+    <span class="nv">$book</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">load</span><span class="p">(</span> <span class="s1">&#39;book&#39;</span><span class="p">,</span> <span class="nv">$id</span> <span class="p">);</span>
+
+    <span class="nv">$book</span><span class="o">-&gt;</span><span class="na">title</span> <span class="o">=</span> <span class="s1">&#39;Learn to fly&#39;</span><span class="p">;</span>
+    <span class="nv">$book</span><span class="o">-&gt;</span><span class="na">rating</span> <span class="o">=</span> <span class="s1">&#39;good&#39;</span><span class="p">;</span>
+    <span class="nv">$book</span><span class="o">-&gt;</span><span class="na">published</span> <span class="o">=</span> <span class="s1">&#39;2015-02-15&#39;</span><span class="p">;</span>
+
+    <span class="c1">// Pronto!</span>
+    <span class="nx">R</span><span class="o">::</span><span class="na">store</span><span class="p">(</span> <span class="nv">$book</span> <span class="p">);</span></code></pre></div>
+
+<p>O RedBean também administra bem as alterações dos tipos de campos no banco de dados.</p>
+
+<p>Por exemplo, você inseriu <code>$book-&gt;page = '2'</code> e no update, você enviou <code>$book-&gt;page = 3</code>.</p>
+
+<p>O RedBean se encarrega de atualizar o tipo de campo no banco de dados. Isso serve para todos os tipos de dados.</p>
+
+<p>Para salvar datas, você pode usar as seguintes notações:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="nv">$meeting</span><span class="o">-&gt;</span><span class="na">registeredAt</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">isoDate</span><span class="p">();</span> <span class="c1">// Funcao nativa do redbean que gera um registro no tipo datetime</span>
+    <span class="nv">$meeting</span><span class="o">-&gt;</span><span class="na">when</span> <span class="o">=</span> <span class="s1">&#39;1995-12-05&#39;</span><span class="p">;</span> <span class="c1">//Date</span>
+    <span class="nv">$photo</span><span class="o">-&gt;</span><span class="na">created</span> <span class="o">=</span> <span class="s1">&#39;1995-12-05 19:00:00&#39;</span><span class="p">;</span> <span class="c1">//Date time</span></code></pre></div>
+
+<h3 id="delete">Delete</h3>
+
+<p>Para excluir um bean também é muito fácil:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="nv">$book</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">load</span><span class="p">(</span> <span class="s1">&#39;book&#39;</span><span class="p">,</span> <span class="nv">$id</span> <span class="p">);</span>
+    <span class="nx">R</span><span class="o">::</span><span class="na">trash</span><span class="p">(</span> <span class="nv">$book</span> <span class="p">);</span> <span class="c1">//para um bean</span>
+
+    <span class="c1">// ou</span>
+    <span class="c1">// $ids = array(1,2,3,4)</span>
+    <span class="nv">$books</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">loadAll</span><span class="p">(</span> <span class="s1">&#39;book&#39;</span><span class="p">,</span> <span class="nv">$ids</span> <span class="p">);</span>
+    <span class="nx">R</span><span class="o">::</span><span class="na">trashAll</span><span class="p">(</span> <span class="nv">$books</span> <span class="p">);</span> <span class="c1">//para multiplos beans</span></code></pre></div>
+
+<p>Bom, por enquanto é isso. Espero que tenha gostado da flexibilidade desse ORM.</p>
+
+<p>Aproveita e dá uma olhada na documentação e já ir avançando nos estudos.</p>
+
+<p>No próximo post, vou abordar características avançados do RedBean, mas muito comuns como: relacionamentos entre entidades, lazy load, performance, segurança e etc.</p>
+
+<p>Aquele abraço!</p>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://felipeneuhauss.github.io/tags/#php" title="Pages tagged php" class="tag">php</a><a href="http://felipeneuhauss.github.io/tags/#RedBean PHP" title="Pages tagged RedBean PHP" class="tag">RedBean PHP</a><a href="http://felipeneuhauss.github.io/tags/#ORM" title="Pages tagged ORM" class="tag">ORM</a></span>
+        <span><a href="http://felipeneuhauss.github.io/redbean-php-basic/" rel="bookmark" title="Redbean ORM PHP - Uso básico">Redbean ORM PHP - Uso básico</a> was published on <span class="entry-date date published updated"><time datetime="2014-10-08T00:00:00-03:00">October 08, 2014</time></span></span>
+        (revised: <span class="entry-date date modified"><time datetime="2014-08-10">08/10/2014</time></span>)
+        <span class="author vcard"><span class="fn"><a href="http://felipeneuhauss.github.io/about/" title="About Felipe Neuhauss">Felipe Neuhauss</a></span></span>
+        <div class="social-share">
+          <ul class="socialcount socialcount-small inline-list">
+            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://felipeneuhauss.github.io/redbean-php-basic/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+            <!--<li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://felipeneuhauss.github.io/redbean-php-basic/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>-->
+            <!--<li class="googleplus"><a href="https://plus.google.com/share?url=http://felipeneuhauss.github.io/redbean-php-basic/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>-->
+          </ul>
+        </div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    
+    <div class="read-more">
+      
+        <div class="read-more-header">
+          <a href="http://felipeneuhauss.github.io/php-oracle-varias-coordenadas/" class="read-more-btn">Read More</a>
+        </div><!-- /.read-more-header -->
+        <div class="read-more-content">
+          <h3><a href="http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/" title="Proxy - Github">Proxy - Github</a></h3>
+          <p>Neste post, vou mostrar como instalar o plugin dbase no PHP, no Mac OS Yosemite <a href="http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/">Continue reading</a></p>
+        </div><!-- /.read-more-content -->
+      
+      <div class="read-more-list">
+        
+          <div class="list-item">
+            <h4><a href="http://felipeneuhauss.github.io/proxy-github/" title="Proxy - Github">Proxy - Github</a></h4>
+            <span>Published on October 20, 2014</span>
+          </div><!-- /.list-item -->
+        
+          <div class="list-item">
+            <h4><a href="http://felipeneuhauss.github.io/redbean-php-advanced/" title="Redbean ORM PHP - Uso avançado">Redbean ORM PHP - Uso avançado</a></h4>
+            <span>Published on October 14, 2014</span>
+          </div><!-- /.list-item -->
+        
+      </div><!-- /.read-more-list -->
+      
+    </div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2015 Felipe Neuhauss. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://felipeneuhauss.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://felipeneuhauss.github.io/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'true'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>	        
+
+
+</body>
+</html>

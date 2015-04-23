@@ -1,0 +1,716 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Quebrando a cabeça &#8211; felipeneuhauss</title>
+<meta name="description" content=".">
+<meta name="keywords" content="programação, javascript, geomprocessamento, nodejs, mongodb, php, css, baas">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Quebrando a cabeça">
+<meta property="og:description" content=".">
+<meta property="og:url" content="http://felipeneuhauss.github.io/index.html">
+<meta property="og:site_name" content="felipeneuhauss">
+
+
+
+
+
+<link rel="canonical" href="http://felipeneuhauss.github.io/">
+<link href="http://felipeneuhauss.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="felipeneuhauss Feed">
+<link rel="author" href="https://google.com/+yourid?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://felipeneuhauss.github.io/assets/css/main.min.css">
+<!-- Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://felipeneuhauss.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://felipeneuhauss.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://felipeneuhauss.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://felipeneuhauss.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://felipeneuhauss.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://felipeneuhauss.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://felipeneuhauss.github.io/images/apple-touch-icon-144x144-precomposed.png">
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55641666-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+</head>
+
+<body id="post-index" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Abrir Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://felipeneuhauss.github.io">Home</a></li>
+		<li>
+			<a href="#">Sobre</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://felipeneuhauss.github.io/images/avatar.png" alt="Felipe Neuhauss photo" class="author-photo">
+					<h4>Felipe Neuhauss</h4>
+					<p>Bacharel em Sistemas de Informações, com especialização em Gerenciamento de Projetos - PMBoK. Possui mais de 7 anos de experiência em TI trabalhando na pesquisa, planejamento, análise e desenvolvimento de sistemas e aplicativos web em empresas e organizações como: Tribunal de Contas da União, Receita Federal, Centro de Apoio ao Desenvolvimento Tecnológico da Universidade de Brasília, Ministério da Educação, General Motors, Grupo JBS Friboi, Flora Higiene e Limpeza, CDS - Condomínio de Soluções Corporativas e Grupo 954. Participou como co-founder da Izie, uma Startup Brasileira focada no mercado de soluções para a Venda Direta.</p>
+				</li>
+				<li><a href="http://felipeneuhauss.github.io/about/">Leia mais</a></li>
+				<li>
+					<a href="mailto:felipe.neuhauss@gmail.com"><i class="fa fa-envelope"></i> Email</a>
+				</li>
+				
+				<li>
+					<a href="http://facebook.com/felipeneuhauss"><i class="fa fa-facebook"></i> Facebook</a>
+				</li>
+				<li>
+					<a href="https://google.com/+yourid"><i class="fa fa-google-plus"></i> Google+</a>
+				</li>
+				<li>
+					<a href="http://linkedin.com/in/br.linkedin.com/in/felipeneuhauss/"><i class="fa fa-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="http://github.com/felipe"><i class="fa fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://felipeneuhauss.github.io/posts/">Todos os Posts</a></li>
+				<li><a href="http://felipeneuhauss.github.io/tags/">Todas as Tags</a></li>
+			</ul>
+		</li>
+		<li><a href="http://felipeneuhauss.github.io/theme-setup">Theme Setup</a></li><li><a href="http://mademistakes.com" target="_blank">External Link</a></li>
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+<div class="entry-header">
+  
+        <div class="image-credit">
+            <a href="http://www.zend.com/en/yellow-pages/ZEND024323" target="_blank">
+            <img src="http://felipeneuhauss.github.io/images/zf-logo.jpg" />
+            </a>
+            <!--<a href="http://www.zend.com/en/yellow-pages/ZEND024323" target="_blank">-->
+                <!--<img src="http://felipeneuhauss.github.io/images/zf-logo.jpg" />-->
+            <!--</a>-->
+        </div>
+    <!-- /.image-credit -->
+  
+    <div class="entry-image">
+      <img src="http://felipeneuhauss.github.io/images/abstract-1.jpg" alt="Quebrando a cabeça">
+    </div><!-- /.entry-image -->
+  
+  <div class="header-title">
+    <div class="header-title-wrap">
+      <h1>felipeneuhauss</h1>
+      <h2>Quebrando a cabeça</h2>
+    </div><!-- /.header-title-wrap -->
+  </div><!-- /.header-title -->
+</div><!-- /.entry-header -->
+
+<div id="main" role="main">
+  
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-04-23T00:00:00-03:00"><a href="http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/">April 23, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://felipeneuhauss.github.io/about/" title="About Felipe Neuhauss">Felipe Neuhauss</a></span></span>&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/#disqus_thread">Comment</a></span>
+      
+      <span class="entry-reading-time pull-right">
+        <i class="fa fa-clock-o"></i>
+        
+        Lido em ~1 minuto
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/" rel="bookmark" title="Proxy - Github" itemprop="url">Proxy - Github</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <h2 id="instalao-da-extenso-dbaseso-no-php---mac-os-105--10">Instalação da extensão dbase.so no PHP - Mac OS 10.5 &gt; 10.*</h2>
+
+<iframe src="//giphy.com/embed/jXBRQHjXsFVYY" width="480" height="370" frameborder="0" style="max-width: 100%" class="giphy-embed" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<p>Um tempo atrás apanhei pra instalar a extensão dbase para trabalhar com arquivos <code>shapes</code> no PHP.</p>
+
+<p>Depois descobri que é muito fácil instalar essas extensões. Segue o passo a passo.</p>
+
+<p>Faça o download do arquivo <a href="https://pecl.php.net/get/dbase-5.1.0.tgz">https://pecl.php.net/get/dbase-5.1.0.tgz</a>. No meu caso ele foi parar na pasta “Downloads”</p>
+
+<p>Descompacte o arquivo dbase-5.0.1.tgz</p>
+
+<p>Agora no terminal:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>Downloads/dbase-5.0.1/dbase-5.0.1
+<span class="nv">$ </span>phpize
+<span class="nv">$ </span>./configure
+<span class="nv">$ </span>make
+<span class="nv">$ </span>make install
+<span class="nv">$ </span><span class="nb">echo </span><span class="nv">extension</span><span class="o">=</span>dbase.so &gt;&gt; /etc/php.ini
+<span class="nv">$ </span>sudo apachectl restart
+<span class="nv">$ </span>php -m <span class="c"># Listar as extensões instaladas</span></code></pre></div>
+
+<p>O comando <code># php -m</code> lista as extensões instaladas no PHP. Veja se a extensão <code>dbase</code> foi listada.</p>
+
+<h2 id="outra-forma-de-ver-as-extenses-instaladas-no-php">Outra forma de ver as extensões instaladas no PHP</h2>
+
+<p>Você pode ver se a extensão foi instalada de uma forma mais complicada. Basta criar um arquivo <code>index.php</code>, colocar o código:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="nb">phpinfo</span><span class="p">();</span>
+<span class="cp">?&gt;</span><span class="x"></span></code></pre></div>
+
+<p>Rode a “aplicação” com o servidor embutido do php:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>php -S localhost:7777</code></pre></div>
+
+<p>Depois só executá-lo no browser <code>http://localhost:7777/index.php</code>. Ai você pode pesquisar por <code>extension_dir</code> para descobrir
+o diretório de onde são instaladas as extensões PHP. Se tiver o arquvo <code>dbase.so</code> lá, provavelmente está instalado.</p>
+
+<p>Aquele abraço!</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-10-20T00:00:00-02:00"><a href="http://felipeneuhauss.github.io/proxy-github/">October 20, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://felipeneuhauss.github.io/about/" title="About Felipe Neuhauss">Felipe Neuhauss</a></span></span>&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="http://felipeneuhauss.github.io/proxy-github/#disqus_thread">Comment</a></span>
+      
+      <span class="entry-reading-time pull-right">
+        <i class="fa fa-clock-o"></i>
+        
+        Lido em ~1 minuto
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://felipeneuhauss.github.io/proxy-github/" rel="bookmark" title="Proxy - Github" itemprop="url">Proxy - Github</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <h2 id="configurando-proxy-no-github">Configurando proxy no github</h2>
+
+<p>Para configurar proxys no github é bem simples. Isso é útil para aqueles que foram impedidos de utilizá-lo
+nas empresas, por limitações do proxy.</p>
+
+<p>Eu mesmo tive que fazê-lo para postar esse post.rs</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="x">$ git config --global http.proxy http://proxy:8080</span>
+<span class="x">$ git config --global https.proxy https://proxy:8080</span></code></pre></div>
+
+<h2 id="para-cancelar-o-proxy">Para cancelar o proxy</h2>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="x">$ git config --global --unset http.proxy</span></code></pre></div>
+
+<p>Espero que esses comandos ajudem.</p>
+
+<p>Aquele abraço!</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-10-14T00:00:00-03:00"><a href="http://felipeneuhauss.github.io/redbean-php-advanced/">October 14, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://felipeneuhauss.github.io/about/" title="About Felipe Neuhauss">Felipe Neuhauss</a></span></span>&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="http://felipeneuhauss.github.io/redbean-php-advanced/#disqus_thread">Comment</a></span>
+      
+      <span class="entry-reading-time pull-right">
+        <i class="fa fa-clock-o"></i>
+        
+        Lido em ~4 minutos
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://felipeneuhauss.github.io/redbean-php-advanced/" rel="bookmark" title="Redbean ORM PHP - Uso avançado" itemprop="url">Redbean ORM PHP - Uso avançado</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Dando continuidade ao post anterior, vamos iniciar pelos relacionamentos entre entidades no <a href="http://redbeanphp.com">http://redbeanphp.com</a>.</p>
+
+<h2 id="relacioanamentos-no-redbeanphp">Relacioanamentos no RedBeanPHP</h2>
+
+<h3 id="um-pra-muitos-one-to-many">Um-pra-muitos (One-to-many)</h3>
+
+<p>Fazer o relacionamento de one-to-many é muito simples:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="nv">$store</span>   <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span> <span class="s1">&#39;store&#39;</span> <span class="p">);</span>
+    <span class="nv">$product</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span> <span class="s1">&#39;product&#39;</span> <span class="p">);</span>
+    <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">price</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
+    <span class="nv">$store</span><span class="o">-&gt;</span><span class="na">ownProductList</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$product</span>
+    <span class="nx">R</span><span class="o">::</span><span class="na">store</span><span class="p">(</span> <span class="nv">$store</span> <span class="p">);</span></code></pre></div>
+
+<p>Note que para se fazer o relacionamento, foi setado o array <code>ownProductList</code>. Sua nomeclatura inicia-se com <code>own</code> + <code>Nomedaentidade</code> + <code>List</code>. Esse é o padrão do RedBeanPHP</p>
+
+<p>Outro exemplo:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="nv">$product</span>   <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">find</span><span class="p">(</span> <span class="s1">&#39;product&#39;</span><span class="p">,</span> <span class="s1">&#39; title LIKE ? &#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Leite%&#39;</span><span class="p">)</span>  <span class="p">);</span>
+    <span class="nv">$image</span>     <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span> <span class="s1">&#39;image&#39;</span> <span class="p">);</span>
+    <span class="nv">$image</span><span class="o">-&gt;</span><span class="na">file_name</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
+    <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">ownImageList</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$image</span>
+    <span class="nx">R</span><span class="o">::</span><span class="na">store</span><span class="p">(</span> <span class="nv">$product</span> <span class="p">);</span></code></pre></div>
+
+<h3 id="muitos-pra-muitos-many-to-many">Muitos-pra-muitos (Many-to-many)</h3>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="k">list</span><span class="p">(</span><span class="nv">$leite</span><span class="p">,</span> <span class="nv">$queijo</span><span class="p">)</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span><span class="s1">&#39;product&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+
+    <span class="nv">$tag</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span> <span class="s1">&#39;tag&#39;</span> <span class="p">);</span>
+    <span class="nv">$tag</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="s1">&#39;laticíneos&#39;</span><span class="p">;</span>
+
+    <span class="c1">//creates product_tag table!</span>
+    <span class="nv">$leite</span><span class="o">-&gt;</span><span class="na">sharedTagList</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$tag</span><span class="p">;</span>
+    <span class="nv">$queijo</span><span class="o">-&gt;</span><span class="na">sharedTagList</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$tag</span><span class="p">;</span>
+    <span class="nx">R</span><span class="o">::</span><span class="na">storeAll</span><span class="p">(</span> <span class="k">array</span><span class="p">(</span><span class="nv">$leite</span><span class="p">,</span> <span class="nv">$queijo</span><span class="p">)</span> <span class="p">);</span></code></pre></div>
+
+<p>Ambos os produtos, <code>leite</code> e <code>queijo</code>, fazem parte do grupo <code>laticíneos</code>.</p>
+
+<p>Nesse caso o RedBeanPHP cria uma tabela relacional chamada <code>product_tag</code>. Fácil não?</p>
+
+<p>Uma outra forma de se criar um relacionamento <code>many-to-many</code> é essa:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="nv">$participant</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span><span class="s1">&#39;participant&#39;</span><span class="p">);</span>
+    <span class="nv">$participante</span><span class="o">-&gt;</span><span class="na">project</span> <span class="o">=</span> <span class="nv">$project</span><span class="p">;</span>
+    <span class="nv">$participant</span><span class="o">-&gt;</span><span class="na">employee</span> <span class="o">=</span> <span class="nv">$felipe</span><span class="p">;</span>
+    <span class="nv">$participant</span><span class="o">-&gt;</span><span class="na">role</span>     <span class="o">=</span> <span class="s1">&#39;developer&#39;</span><span class="p">;</span>
+    <span class="nx">R</span><span class="o">::</span><span class="na">store</span><span class="p">(</span> <span class="nv">$participant</span> <span class="p">);</span></code></pre></div>
+
+<p>Agora, baseado no exemplo acima, se eu quiser pegar “Todos os employees (empregados) via participants (participantes) de um determinado projeto”, como eu faço?</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+
+    <span class="c1">// Se o bean nao existir, uma nova entidade sera retornada com o ID 0.</span>
+    <span class="nv">$employees</span> <span class="o">=</span> <span class="nv">$project</span>
+            <span class="o">-&gt;</span><span class="na">via</span><span class="p">(</span> <span class="s1">&#39;participant&#39;</span> <span class="p">)</span>
+            <span class="o">-&gt;</span><span class="na">sharedEmployeeList</span><span class="p">;</span></code></pre></div>
+
+<p>Note o nome <code>sharedEmployeeList</code>. Assim como o <code>ownProductList</code>, para se pegar os <code>beans</code> compartilhados, faz-se o uso do
+prefixo <code>shared</code> + <code>NomeDaEntidade</code> + <code>List</code>.</p>
+
+<h2 id="importa-beans">Importa beans</h2>
+
+<p>O RedbeanPHP oferece vários recursos para carregar beans com dados.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+
+     <span class="nv">$book</span><span class="o">-&gt;</span><span class="na">import</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">);</span>
+
+     <span class="c1">// ou</span>
+     <span class="c1">// Carregue o bean apenas com os dados representados na string do 2º parametro</span>
+     <span class="nv">$book</span><span class="o">-&gt;</span><span class="na">import</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">,</span> <span class="s1">&#39;title,subtitle,summary,price&#39;</span><span class="p">);</span></code></pre></div>
+
+<h2 id="exportar-beans">Exportar beans</h2>
+
+<p>Fazer o export de beans é muito útil para aplicações REST, ou aquelas, cuja comunicação se dá via ajax e cujos dados
+são normalmente estruturados em JSON.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+
+    <span class="c1">// Exporta para array</span>
+    <span class="nv">$array</span> <span class="o">=</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">();</span>
+
+    <span class="c1">// Outra forma para um array de beans</span>
+    <span class="nv">$arrays</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">exportAll</span><span class="p">(</span> <span class="nv">$products</span> <span class="p">);</span>
+
+    <span class="c1">// Exporta os beans para array inclusive as entidades pais e dependentes de forma recursiva.</span>
+    <span class="nv">$arrays</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">exportAll</span><span class="p">(</span> <span class="nv">$products</span><span class="p">,</span> <span class="k">TRUE</span> <span class="p">);</span></code></pre></div>
+
+<p>O segundo parâmetro de <code>R::exportAll($beans, $parent = true)</code>, sendo ‘true’, traz inclusive, de forma recursiva, as entidades <code>pais</code>
+das entidades <code>pais</code>, e as  <code>pais</code> das entidades dependentes.</p>
+
+<p>Nem sempre você quer trazer todas as informações relacionadas ao <code>bean</code>, pois muitas vezes,
+em beans com alta dependência implica diretamente na queda da performance, uma vez que o RedBeanPHP
+vai navegar por todas as entidades.</p>
+
+<p>Nesse caso, use o terceiro parâmetro dessa função para fazer um filtro dos relacionamentos que você deseja trazer. Exemplo:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+
+    <span class="c1">// Traga os produtos e apenas a categoria (category) do produto. Nao serao trazidos as imagens dos produtos</span>
+    <span class="nv">$array</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">exportAll</span><span class="p">(</span><span class="nv">$products</span><span class="p">,</span> <span class="k">true</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">));</span></code></pre></div>
+
+<p>Você pode também limitar quais os <code>beans</code> das entidades pais você quer filtrar.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="cm">/*</span>
+<span class="cm">        Nesse caso, para cada entidade $user, alem de trazer os beans da entidade</span>
+<span class="cm">        relacional role_user com os registros [user_id, role_id], pega-se apenas a entidade</span>
+<span class="cm">        role com os registros [id, name, registeredAt].</span>
+<span class="cm">     */</span>
+    <span class="k">return</span> <span class="nx">R</span><span class="o">::</span><span class="na">exportAll</span><span class="p">(</span><span class="nv">$users</span><span class="p">,</span> <span class="k">true</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;role_user&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;role&#39;</span><span class="p">));</span></code></pre></div>
+
+<h2 id="produo">Produção</h2>
+
+<p>Você não vai querer que as informações inputadas por seus usuários, altere as características do seu banco.
+Você pode fazer o uso da função <code>R::freeze( TRUE );</code>. Ela irá congelar o seu banco, impedindo alterações
+nas características de seus campos e tabelas.</p>
+
+<h2 id="debug">Debug</h2>
+
+<p>Você pode debugar o SQL gerado pelo RedBeanPHP. Basta colocar a função <code>R::debug( TRUE );</code> em qualquer trecho do seu código
+para que você veja as <code>querys</code> que estão sendo executadas. Você verá algo semelhante ao trecho abaixo:</p>
+
+<div class="notice">
+INSERT INTO "event" ( id, "name" ) VALUES
+( NULL, ? )
+Array
+
+(
+[0] =&gt; party
+)
+</div>
+
+<h2 id="consideraes-finais">Considerações finais</h2>
+
+<p>Outras funcionalidades como <code>count</code>, <code>snippets</code>, <code>joins</code> dentre outras, não foram abordados nesse post.
+Mas você pode aprender de forma fácil no próprio site e documentação da RedBean PHP. Mais pra frente
+devo postar outra coisas interessantes do RedBean.</p>
+
+<p>Aquele abraço!</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-10-08T00:00:00-03:00"><a href="http://felipeneuhauss.github.io/redbean-php-basic/">October 08, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://felipeneuhauss.github.io/about/" title="About Felipe Neuhauss">Felipe Neuhauss</a></span></span>&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="http://felipeneuhauss.github.io/redbean-php-basic/#disqus_thread">Comment</a></span>
+      
+      <span class="entry-reading-time pull-right">
+        <i class="fa fa-clock-o"></i>
+        
+        Lido em ~3 minutos
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://felipeneuhauss.github.io/redbean-php-basic/" rel="bookmark" title="Redbean ORM PHP - Uso básico" itemprop="url">Redbean ORM PHP - Uso básico</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>O RedBean PHP é um ORM que tem me consquistado. Não só pela facilidade de se trabalhar com ele, mas por ser poderoso
+na construção de aplicativos de forma muito rápida. Nesse post vou mostrar como utilizá-lo. Mais informações acesse
+<a href="http://redbeanphp.com">http://redbeanphp.com</a>.</p>
+
+<p>Por enquanto esqueça modelagem de dados. Talvez você use apenas um mapa mental pra mostrar os relacionamentos entre as entidades e saber
+como seu projeto está crescrendo.</p>
+
+<div style="width:300px; position:relative; margin: 0 auto;">
+    <iframe src="//giphy.com/embed/D0EjguuQzYr9m" width="250" height="166.5" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+<p>Depois que você fizer o download insira no seu projeto:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="k">require</span> <span class="s1">&#39;rb.php&#39;</span><span class="p">;</span></code></pre></div>
+
+<p>A única coisa que você vai precisar criar é o banco. Agora faça a configuração do banco.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="k">require</span> <span class="s1">&#39;rb.php&#39;</span><span class="p">;</span>
+
+    <span class="nx">R</span><span class="o">::</span><span class="na">setup</span><span class="p">(</span><span class="s1">&#39;mysql:host=localhost;dbname=mydatabase&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;user&#39;</span><span class="p">,</span><span class="s1">&#39;password&#39;</span><span class="p">);</span> <span class="c1">// MySQL connection</span></code></pre></div>
+
+<h3 id="crud-no-redbean-php">CRUD no RedBean PHP</h3>
+
+<h4 id="insert">Insert</h4>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="k">require</span> <span class="s1">&#39;rb.php&#39;</span><span class="p">;</span>
+
+    <span class="nx">R</span><span class="o">::</span><span class="na">setup</span><span class="p">(</span><span class="s1">&#39;mysql:host=localhost;dbname=mydatabase&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;user&#39;</span><span class="p">,</span><span class="s1">&#39;password&#39;</span><span class="p">);</span> <span class="c1">//for both mysql</span>
+    <span class="c1">// Cria uma nova instancia pra entidade livro</span>
+    <span class="nv">$book</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span> <span class="s1">&#39;book&#39;</span> <span class="p">);</span>
+
+    <span class="c1">// Adicione algumas propriedades</span>
+    <span class="nv">$book</span><span class="o">-&gt;</span><span class="na">title</span> <span class="o">=</span> <span class="s1">&#39;Learn to Program&#39;</span><span class="p">;</span>
+    <span class="nv">$book</span><span class="o">-&gt;</span><span class="na">rating</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+
+    <span class="c1">// Voce pode usar a notacao em forma de array tambem</span>
+    <span class="nv">$book</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">29.99</span>
+
+    <span class="c1">// ..e... salve no banco</span>
+    <span class="nv">$id</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">store</span><span class="p">(</span> <span class="nv">$book</span> <span class="p">);</span></code></pre></div>
+
+<p>Automaticamente, o RedBean criará a tabela <code>book</code>, com os campos no formato que você inseriu. Isso é lindo!</p>
+
+<p>Infelizmente, na versão atual em que escrevo este post (RedBean - 4.1), o RedBean possui a limitação de se trabalhar com <code>SCHEMAS</code>.</p>
+
+<p>Por convensão, o nome das tabelas deve seguir a seguintes regras:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="nv">$page</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">);</span> <span class="c1">//Valido</span>
+    <span class="nv">$page</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span> <span class="s1">&#39;Page&#39;</span> <span class="p">);</span> <span class="c1">//Invalido: uppercase</span>
+    <span class="nv">$page</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span> <span class="s1">&#39;cms_page&#39;</span> <span class="p">);</span> <span class="c1">//Invalido: _ Obs: O redbean usa underscore para tabelas relacionais</span>
+    <span class="nv">$page</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">dispense</span><span class="p">(</span> <span class="s1">&#39;@#!&#39;</span> <span class="p">);</span> <span class="c1">// Invalido</span></code></pre></div>
+
+<h3 id="update">Update</h3>
+
+<p>Para atualizar um registro, é muito simples. Veja:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+
+    <span class="c1">// Se o bean nao existir, uma nova entidade sera retornada com o ID 0.</span>
+    <span class="nv">$book</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">load</span><span class="p">(</span> <span class="s1">&#39;book&#39;</span><span class="p">,</span> <span class="nv">$id</span> <span class="p">);</span>
+
+    <span class="nv">$book</span><span class="o">-&gt;</span><span class="na">title</span> <span class="o">=</span> <span class="s1">&#39;Learn to fly&#39;</span><span class="p">;</span>
+    <span class="nv">$book</span><span class="o">-&gt;</span><span class="na">rating</span> <span class="o">=</span> <span class="s1">&#39;good&#39;</span><span class="p">;</span>
+    <span class="nv">$book</span><span class="o">-&gt;</span><span class="na">published</span> <span class="o">=</span> <span class="s1">&#39;2015-02-15&#39;</span><span class="p">;</span>
+
+    <span class="c1">// Pronto!</span>
+    <span class="nx">R</span><span class="o">::</span><span class="na">store</span><span class="p">(</span> <span class="nv">$book</span> <span class="p">);</span></code></pre></div>
+
+<p>O RedBean também administra bem as alterações dos tipos de campos no banco de dados.</p>
+
+<p>Por exemplo, você inseriu <code>$book-&gt;page = '2'</code> e no update, você enviou <code>$book-&gt;page = 3</code>.</p>
+
+<p>O RedBean se encarrega de atualizar o tipo de campo no banco de dados. Isso serve para todos os tipos de dados.</p>
+
+<p>Para salvar datas, você pode usar as seguintes notações:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="nv">$meeting</span><span class="o">-&gt;</span><span class="na">registeredAt</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">isoDate</span><span class="p">();</span> <span class="c1">// Funcao nativa do redbean que gera um registro no tipo datetime</span>
+    <span class="nv">$meeting</span><span class="o">-&gt;</span><span class="na">when</span> <span class="o">=</span> <span class="s1">&#39;1995-12-05&#39;</span><span class="p">;</span> <span class="c1">//Date</span>
+    <span class="nv">$photo</span><span class="o">-&gt;</span><span class="na">created</span> <span class="o">=</span> <span class="s1">&#39;1995-12-05 19:00:00&#39;</span><span class="p">;</span> <span class="c1">//Date time</span></code></pre></div>
+
+<h3 id="delete">Delete</h3>
+
+<p>Para excluir um bean também é muito fácil:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="nv">$book</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">load</span><span class="p">(</span> <span class="s1">&#39;book&#39;</span><span class="p">,</span> <span class="nv">$id</span> <span class="p">);</span>
+    <span class="nx">R</span><span class="o">::</span><span class="na">trash</span><span class="p">(</span> <span class="nv">$book</span> <span class="p">);</span> <span class="c1">//para um bean</span>
+
+    <span class="c1">// ou</span>
+    <span class="c1">// $ids = array(1,2,3,4)</span>
+    <span class="nv">$books</span> <span class="o">=</span> <span class="nx">R</span><span class="o">::</span><span class="na">loadAll</span><span class="p">(</span> <span class="s1">&#39;book&#39;</span><span class="p">,</span> <span class="nv">$ids</span> <span class="p">);</span>
+    <span class="nx">R</span><span class="o">::</span><span class="na">trashAll</span><span class="p">(</span> <span class="nv">$books</span> <span class="p">);</span> <span class="c1">//para multiplos beans</span></code></pre></div>
+
+<p>Bom, por enquanto é isso. Espero que tenha gostado da flexibilidade desse ORM.</p>
+
+<p>Aproveita e dá uma olhada na documentação e já ir avançando nos estudos.</p>
+
+<p>No próximo post, vou abordar características avançados do RedBean, mas muito comuns como: relacionamentos entre entidades, lazy load, performance, segurança e etc.</p>
+
+<p>Aquele abraço!</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-10-05T00:00:00-03:00"><a href="http://felipeneuhauss.github.io/php-oracle-varias-coordenadas/">October 05, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://felipeneuhauss.github.io/about/" title="About Felipe Neuhauss">Felipe Neuhauss</a></span></span>&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="http://felipeneuhauss.github.io/php-oracle-varias-coordenadas/#disqus_thread">Comment</a></span>
+      
+      <span class="entry-reading-time pull-right">
+        <i class="fa fa-clock-o"></i>
+        
+        Lido em ~3 minutos
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://felipeneuhauss.github.io/php-oracle-varias-coordenadas/" rel="bookmark" title="SDO_GEOMETRY(wkt CLOB, srid NUMBER DEFAULT NULL) + ORACLE + PHP (oci)." itemprop="url">SDO_GEOMETRY(wkt CLOB, srid NUMBER DEFAULT NULL) + ORACLE + PHP (oci).</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <h3 id="problema">Problema:</h3>
+<div class="info">
+Alterar um sistema que criava campos do tipo SDO_GEOMETRY, para que recebessem mais de 100 mil coordenadas.
+</div>
+
+<p>A princípio a função em PHP gerava um script em ORACLE semelhante a esse:</p>
+
+<div class="notice">
+SDO_GEOMETRY(2003, NULL, NULL,
+ SDO_ELEM_INFO_ARRAY(1, 1003, 1),
+ SDO_ORDINATE_ARRAY(146,66, 148,66, 148,68, 146,68, 146,66))
+</div>
+
+<p>Pra quem não sabe, existem <code>N</code> formas de se instanciar um campo do tipo SDO_GEOMETRY. Algumas formas são:</p>
+
+<p><code>SDO_GEOMETRY(wkt CLOB, srid NUMBER DEFAULT NULL);</code>
+<code>SDO_GEOMETRY(wkt VARCHAR2, srid NUMBER DEFAULT NULL);</code>
+<code>SDO_GEOMETRY(wkb BLOB, srid NUMBER DEFAULT NULL);</code>
+<code>SDO_GEOMETRY(2003, NULL, NULL,
+    SDO_ELEM_INFO_ARRAY(1, 1003, 1),
+    SDO_ORDINATE_ARRAY(x,y...,x,y))</code></p>
+
+<p>Na última forma de se instanciar apresentada acima, o <code>SDO_ORDINATE_ARRAY</code> tem o limite de 999 coordenadas. Logo não poderemos usar esse construtor.
+Então, usei o construtor <code>SDO_GEOMETRY(wkt CLOB, srid NUMBER DEFAULT NULL);</code>.</p>
+
+<p>O ORACLE tem limitações também na quantidade de caracteres nos parâmetro passados em funções como <code>INSERT INTO</code>. Por padrão são 4000 bytes. Para
+corrigir isso, é preciso dar um <code>bind</code> em variáveis que podem ultrapassar esse limite. No código abaixo, está uma classe que criei, a fim de driblar esses
+problemas.</p>
+
+<p>Observe os comentários. Neles dou exemplos de como são os parâmetros que passei para a função <code>insert($sql, $largeText)</code></p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="sd">/**</span>
+<span class="sd"> * Classe que salva no SDO_GEOMETRY varias coordenadas em CLOB, usando o bind do PHP</span>
+<span class="sd"> * User: felipe.neuhauss</span>
+<span class="sd"> * Date: 01/10/14</span>
+<span class="sd"> * Time: 11:03</span>
+<span class="sd"> */</span>
+
+<span class="k">class</span> <span class="nc">OracleOciSdoGeometry</span> <span class="p">{</span>
+    <span class="k">private</span> <span class="nv">$_host</span><span class="p">;</span> <span class="c1"># Servidor</span>
+    <span class="k">private</span> <span class="nv">$_db</span><span class="p">;</span> 	<span class="c1"># Banco de dados</span>
+    <span class="k">private</span> <span class="nv">$_user</span><span class="p">;</span> <span class="c1"># Usuario</span>
+    <span class="k">private</span> <span class="nv">$_pass</span><span class="p">;</span> <span class="c1"># Senha</span>
+    <span class="k">private</span> <span class="nv">$_conn</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nv">$host</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="nv">$db</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="nv">$user</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="nv">$pass</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="p">{</span>
+
+        <span class="nv">$config</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Zend_Config_Ini</span><span class="p">(</span><span class="nx">APPLICATION_PATH</span><span class="o">.</span><span class="s1">&#39;/configs/application.ini&#39;</span><span class="p">,</span> <span class="s1">&#39;production&#39;</span><span class="p">);</span>
+
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_host</span> <span class="o">=</span> <span class="nv">$host</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span>   <span class="o">?</span> <span class="nv">$host</span> <span class="o">:</span> <span class="nv">$config</span><span class="o">-&gt;</span><span class="na">resources</span><span class="o">-&gt;</span><span class="na">multidb</span><span class="o">-&gt;</span><span class="na">db1</span><span class="o">-&gt;</span><span class="na">dbname</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_user</span> <span class="o">=</span> <span class="nv">$user</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span>  <span class="o">?</span> <span class="nv">$user</span> <span class="o">:</span> <span class="nv">$config</span><span class="o">-&gt;</span><span class="na">resources</span><span class="o">-&gt;</span><span class="na">multidb</span><span class="o">-&gt;</span><span class="na">db1</span><span class="o">-&gt;</span><span class="na">username</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_pass</span> <span class="o">=</span> <span class="nv">$pass</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span> <span class="o">?</span> <span class="nv">$pass</span> <span class="o">:</span> <span class="nv">$config</span><span class="o">-&gt;</span><span class="na">resources</span><span class="o">-&gt;</span><span class="na">multidb</span><span class="o">-&gt;</span><span class="na">db1</span><span class="o">-&gt;</span><span class="na">password</span><span class="p">;</span>
+
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_conn</span> <span class="o">=</span> <span class="o">@</span><span class="nb">oci_pconnect</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_user</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_pass</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_host</span><span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_conn</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$e</span> <span class="o">=</span> <span class="nb">oci_error</span><span class="p">();</span>
+            <span class="nb">trigger_error</span><span class="p">(</span><span class="nb">htmlentities</span><span class="p">(</span><span class="nv">$e</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">],</span> <span class="nx">ENT_QUOTES</span><span class="p">),</span> <span class="nx">E_USER_ERROR</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">close</span><span class="p">(){</span>
+       <span class="o">@</span><span class="nb">oci_close</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_conn</span><span class="p">);</span>
+    <span class="p">}</span>
+
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">insert</span><span class="p">(</span><span class="nv">$sql</span><span class="p">,</span> <span class="nv">$largeText</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="k">try</span><span class="p">{</span>
+            <span class="c1">// Valor do $sql passado como parametro. Observe a criacao da variavel coordinates</span>
+            <span class="cm">/*</span>
+<span class="cm">             $sql = &quot;DECLARE</span>
+<span class="cm">                  coordinates CLOB := :clob_var;</span>
+<span class="cm">                BEGIN</span>
+<span class="cm">                  INSERT INTO MY_TABLE(id, sdo_util.from_wktgeometry(:clob_var)) VALUES (1, coordinates);</span>
+<span class="cm">                END;&quot;;</span>
+<span class="cm">            */</span>
+            <span class="c1">// Valor de $text passado como parametro</span>
+            <span class="cm">/*</span>
+<span class="cm">                -- Mais informacoes sobre formatos primitivos em wkt acess http://en.wikipedia.org/wiki/Well-known_text</span>
+<span class="cm">                $text = &quot; LINESTRING (30 10, 10 30, 40 40, ... ) &quot;;</span>
+<span class="cm">            */</span>
+
+            <span class="nv">$stmt</span> <span class="o">=</span> <span class="nb">oci_parse</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_conn</span><span class="p">,</span> <span class="nv">$sql</span><span class="p">);</span>
+
+            <span class="nv">$objClob</span> <span class="o">=</span> <span class="nb">oci_new_descriptor</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_conn</span><span class="p">,</span> <span class="nx">OCI_D_LOB</span><span class="p">);</span>
+
+            <span class="nb">oci_bind_by_name</span><span class="p">(</span><span class="nv">$stmt</span><span class="p">,</span> <span class="s2">&quot;:clob_var&quot;</span><span class="p">,</span> <span class="nv">$objClob</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="nx">OCI_B_CLOB</span><span class="p">);</span>
+            <span class="nv">$objClob</span><span class="o">-&gt;</span><span class="na">writetemporary</span><span class="p">(</span><span class="nv">$largeText</span><span class="p">);</span>
+
+            <span class="nv">$tst</span> <span class="o">=</span> <span class="nb">oci_execute</span><span class="p">(</span><span class="nv">$stmt</span><span class="p">,</span> <span class="nx">OCI_DEFAULT</span><span class="p">);</span>
+
+            <span class="nb">oci_commit</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_conn</span><span class="p">);</span>
+            <span class="nb">oci_free_statement</span><span class="p">(</span><span class="nv">$stmt</span><span class="p">);</span>
+            <span class="nv">$objBlob</span><span class="o">-&gt;</span><span class="na">free</span><span class="p">();</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="nv">$tst</span> <span class="o">!=</span> <span class="k">null</span><span class="p">){</span>
+                <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+            <span class="p">}</span>
+
+        <span class="p">}</span>
+        <span class="k">catch</span><span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">){;</span>
+
+            <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Outros formatos em wkt você pode ver em <a href="http://en.wikipedia.org/wiki/Well-known_text"> http://en.wikipedia.org/wiki/Well-known_text </a>. Alguns exemplos abaixo:</p>
+
+<p><code>POINT (30 10)</code>, <code>LINESTRING (30 10, 10 30, 40 40)</code>, <code>POLYGON ((30 10, 40 40, 20 40, 10 20, 30 10))</code>,
+<code>POLYGON ((35 10, 45 45, 15 40, 10 20, 35 10),(20 30, 35 35, 30 20, 20 30))</code></p>
+
+<p>Bom pessoa, qualquer problema, só comentar.</p>
+
+<p>Aquele abraço!</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+
+<div class="pagination">
+  
+    <
+  
+  <ul class="inline-list">
+    <li>
+      
+        <span class="current-page">1</span>
+      
+    </li>
+    
+  </ul>
+  
+    >
+  
+</div><!-- /.pagination -->
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2015 Felipe Neuhauss. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://felipeneuhauss.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://felipeneuhauss.github.io/assets/js/scripts.min.js"></script>
+
+          
+
+</body>
+</html>
