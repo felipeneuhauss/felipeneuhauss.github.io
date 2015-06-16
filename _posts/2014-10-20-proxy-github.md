@@ -26,6 +26,11 @@ $ git config --global https.proxy https://proxy:8080
 $ git config --global --unset http.proxy
 {% endhighlight %}
 
+## Definindo proxy para o pear
+{% highlight php %}
+$ pear config-set http_proxy http://proxy:80
+{% endhighlight %}
+
 Espero que esses comandos ajudem.
 
 Aquele abraço!
