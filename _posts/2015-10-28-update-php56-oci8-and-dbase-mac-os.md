@@ -15,7 +15,7 @@ A forma mais fácil de atualizar o PHP do MAC OS X é seguir o passo a passo do 
 
 ## Instalando o oci8
 
-Faça o download dos arquivos do Oracle Client para MAC <a href="http://download.oracle.com/otn/mac/instantclient/11203/instantclient-basic-macos.x64-11.2.0.3.0.zip">http://download.oracle.com/otn/mac/instantclient/11203/instantclient-basic-macos.x64-11.2.0.3.0.zip</a>
+Faça o download dos arquivos do Oracle Client para MAC <a href="http://download.oracle.com/otn/mac/instantclient/11203/instantclient-basic-macos.x64-11.2.0.3.0.zip">http://download.oracle.com/otn/mac/instantclient/11203/instantclient-basic-macos.x64-11.2.0.3.0.zip</a> e
 <a href="http://download.oracle.com/otn/mac/instantclient/11203/instantclient-sdk-macos.x64-11.2.0.3.0.zip">http://download.oracle.com/otn/mac/instantclient/11203/instantclient-sdk-macos.x64-11.2.0.3.0.zip</a>.
 
 Faça também o download do arquivo <a href="https://pecl.php.net/get/oci8-2.0.8.tgz">https://pecl.php.net/get/oci8-2.0.8.tgz</a>.
