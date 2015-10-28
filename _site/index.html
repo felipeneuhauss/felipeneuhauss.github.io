@@ -149,44 +149,64 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-04-23T00:00:00-03:00"><a href="http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/">April 23, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://felipeneuhauss.github.io/about/" title="About Felipe Neuhauss">Felipe Neuhauss</a></span></span>&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/#disqus_thread">Comment</a></span>
+      <span class="entry-date date published updated"><time datetime="2015-10-28T00:00:00-02:00"><a href="http://felipeneuhauss.github.io/update-php56-oci8-and-dbase-mac-os/">October 28, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://felipeneuhauss.github.io/about/" title="About Felipe Neuhauss">Felipe Neuhauss</a></span></span>&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="http://felipeneuhauss.github.io/update-php56-oci8-and-dbase-mac-os/#disqus_thread">Comment</a></span>
       
       <span class="entry-reading-time pull-right">
         <i class="fa fa-clock-o"></i>
         
-        Lido em ~1 minuto
+        Lido em ~2 minutos
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
     
-      <h1 class="entry-title"><a href="http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/" rel="bookmark" title="Proxy - Github" itemprop="url">Proxy - Github</a></h1>
+      <h1 class="entry-title"><a href="http://felipeneuhauss.github.io/update-php56-oci8-and-dbase-mac-os/" rel="bookmark" title="Atualizando PHP para o 5.6 e instalando o oci8 e dbase" itemprop="url">Atualizando PHP para o 5.6 e instalando o oci8 e dbase</a></h1>
     
   </header>
   <div class="entry-content">
-    <h2 id="instalao-da-extenso-dbaseso-no-php---mac-os-105--10">Instalação da extensão dbase.so no PHP - Mac OS 10.5 &gt; 10.*</h2>
+    <h2 id="atualizao-do-php-no-mac-os-x">Atualização do PHP no MAC OS X</h2>
 
-<iframe src="//giphy.com/embed/jXBRQHjXsFVYY" width="480" height="370" frameborder="0" style="max-width: 100%" class="giphy-embed" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p>A forma mais fácil de atualizar o PHP do MAC OS X é seguir o passo a passo do site <a href="http://php-osx.liip.ch/">http://php-osx.liip.ch/</a></p>
 
-<p>Um tempo atrás apanhei pra instalar a extensão dbase para trabalhar com arquivos <code>shapes</code> no PHP.</p>
+<h2 id="instalando-o-oci8">Instalando o oci8</h2>
 
-<p>Depois descobri que é muito fácil instalar essas extensões. Segue o passo a passo.</p>
+<p>Faça o download dos arquivos do Oracle Client para MAC instantclient-basic-macosx-10.1.0.3.zip e instantclient-sdk-macosx-10.1.0.3.zip no link
+<a href="http://www.oracle.com/technetwork/topics/macsoft-088229.html">http://www.oracle.com/technetwork/topics/macsoft-088229.html</a>.</p>
 
-<p>Faça o download do arquivo <a href="https://pecl.php.net/get/dbase-5.1.0.tgz">https://pecl.php.net/get/dbase-5.1.0.tgz</a>. No meu caso ele foi parar na pasta “Downloads”</p>
+<p>Faça também o download do arquivo <a href="https://pecl.php.net/get/oci8-2.0.8.tgz">https://pecl.php.net/get/oci8-2.0.8.tgz</a>.</p>
 
-<p>Descompacte o arquivo dbase-5.0.1.tgz</p>
+<p>Descompacte os 3 arquivos no diretório <code>/opt/oracle/oci/</code>.</p>
 
-<p>Agora no terminal:</p>
+<p>Serão gerados 2 arquivos <code>instantclient10_1</code> e <code>instantclient10_1 2</code>, além da pasta <code>oci8-2.0.8</code>. Copie o conteúdo da pasta <code>instantclient10_1 2</code> para a pasta <code>instantclient10_1</code>.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>Downloads/dbase-5.0.1/dbase-5.0.1
+<p>Agora no terminal vá até a pasta <code>/opt/oracle/oci/instantclient10_1/</code> via terminal:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /opt/oracle/oci/instantclient10_1/
+<span class="nv">$ </span>ln -s libclntsh.so.10.1 libclntsh.so
+<span class="nv">$ </span>ln -s libocci.so.10.1 libocci.so
+<span class="nv">$ </span>ln -s libclntsh.dylib.10.1 libclntsh.dylib
+<span class="nv">$ </span><span class="nb">cd</span> ..
+<span class="nv">$ </span><span class="nb">cd </span>oci8-2.0.8/oci8-2.0.8/
 <span class="nv">$ </span>phpize
-<span class="nv">$ </span>./configure
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">ORACLE_HOME</span><span class="o">=</span>/opt/oracle/oci/instantclient10_1
+<span class="nv">$ </span>./configure --with-oci8<span class="o">=</span>share,instantclient,/opt/oracle/oci/instantclient10_1
 <span class="nv">$ </span>make
-<span class="nv">$ </span>make install
-<span class="nv">$ </span><span class="nb">echo </span><span class="nv">extension</span><span class="o">=</span>dbase.so &gt;&gt; /etc/php.ini
-<span class="nv">$ </span>sudo apachectl restart
-<span class="nv">$ </span>php -m <span class="c"># Listar as extensões instaladas</span></code></pre></div>
+<span class="nv">$ </span>sudo make install <span class="c"># voce devera informar o password ao executar esse comando</span>
+<span class="nv">$ </span><span class="nb">echo </span><span class="nv">extension</span><span class="o">=</span>oci8.so &gt;&gt; /usr/local/php5/lib/php.ini <span class="c"># add a linha com a extensao no php.ini</span>
+<span class="nv">$ </span>sudo apachectl restart <span class="c"># restart o servidor apache</span></code></pre></div>
 
-<p>O comando <code># php -m</code> lista as extensões instaladas no PHP. Veja se a extensão <code>dbase</code> foi listada.</p>
+<h2 id="para-instalar-o-dbase">Para instalar o dbase…</h2>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /usr/local/php5/bin/
+<span class="nv">$ </span>sudo ./pecl install dbase
+<span class="nv">$ </span>sudo apachectl restart <span class="c"># restart o servidor apache</span>
+<span class="nv">$ </span>php -m <span class="c"># para verificar se a extensao foi instalada</span></code></pre></div>
+
+<h2 id="problema-tpico-de-instalar-extenso-via-pecl">Problema típico de instalar extensão via <code>pecl</code></h2>
+
+<p>Algumas vezes ao instalar uma extensão via <code>pecl</code>, como a que foi usada acima para instalar o <code>dbase</code> ou o <code>oci8</code>, é informado a mensage:
+<code>No releases available for package...</code>. Neste caso basta setar o proxy (Lembrando que http://proxy:8080 é o proxy da minha rede. O seu proxy deve ser outra coisa):</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>pear config-set http_proxy http://proxy:80</code></pre></div>
 
 <h2 id="outra-forma-de-ver-as-extenses-instaladas-no-php">Outra forma de ver as extensões instaladas no PHP</h2>
 
@@ -238,6 +258,10 @@ nas empresas, por limitações do proxy.</p>
 <h2 id="para-cancelar-o-proxy">Para cancelar o proxy</h2>
 
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="x">$ git config --global --unset http.proxy</span></code></pre></div>
+
+<h2 id="definindo-proxy-para-o-pear">Definindo proxy para o pear</h2>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="x">$ pear config-set http_proxy http://proxy:80</span></code></pre></div>
 
 <p>Espero que esses comandos ajudem.</p>
 

@@ -5,25 +5,25 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Proxy - Github &#8211; felipeneuhauss</title>
-<meta name="description" content="Neste post, vou mostrar como instalar o plugin dbase no PHP, no Mac OS Yosemite">
-<meta name="keywords" content="proxy, github">
+<title>Atualizando PHP para o 5.6 e instalando o oci8 e dbase &#8211; felipeneuhauss</title>
+<meta name="description" content="Neste post vou mostrar como atualiar o PHP para o 5.6 e instalar o oci8 do Oracle">
+<meta name="keywords" content="oci8, mac os, php 5.6">
 
 
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Proxy - Github">
-<meta property="og:description" content="Neste post, vou mostrar como instalar o plugin dbase no PHP, no Mac OS Yosemite">
-<meta property="og:url" content="http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/">
+<meta property="og:title" content="Atualizando PHP para o 5.6 e instalando o oci8 e dbase">
+<meta property="og:description" content="Neste post vou mostrar como atualiar o PHP para o 5.6 e instalar o oci8 do Oracle">
+<meta property="og:url" content="http://felipeneuhauss.github.io/update-php56-oci8-and-dbase-mac-os/">
 <meta property="og:site_name" content="felipeneuhauss">
 
 
 
 
 
-<link rel="canonical" href="http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/">
+<link rel="canonical" href="http://felipeneuhauss.github.io/update-php56-oci8-and-dbase-mac-os/">
 <link href="http://felipeneuhauss.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="felipeneuhauss Feed">
 <link rel="author" href="https://google.com/+yourid?rel=author">
 
@@ -125,7 +125,7 @@
   <!---->
     
   <div class="entry-image">
-    <img src="http://felipeneuhauss.github.io/images/abstract-3.jpg" alt="Proxy - Github">
+    <img src="http://felipeneuhauss.github.io/images/abstract-3.jpg" alt="Atualizando PHP para o 5.6 e instalando o oci8 e dbase">
   </div><!-- /.entry-image -->
 </div><!-- /.entry-header -->
 
@@ -135,43 +135,63 @@
     <header class="header-title">
       <div class="header-title-wrap">
         
-          <h1 class="entry-title"><a href="http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/" rel="bookmark" title="Proxy - Github">Proxy - Github</a></h1>
+          <h1 class="entry-title"><a href="http://felipeneuhauss.github.io/update-php56-oci8-and-dbase-mac-os/" rel="bookmark" title="Atualizando PHP para o 5.6 e instalando o oci8 e dbase">Atualizando PHP para o 5.6 e instalando o oci8 e dbase</a></h1>
         
-        <h2>April 23, 2015</h2>
+        <h2>October 28, 2015</h2>
         
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
           
-          Reading time ~1 minute
+          Reading time ~2 minutes
         </p><!-- /.entry-reading-time -->
         
       </div><!-- /.header-title-wrap -->
     </header>
     <div class="entry-content">
-      <h2 id="instalao-da-extenso-dbaseso-no-php---mac-os-105--10">Instalação da extensão dbase.so no PHP - Mac OS 10.5 &gt; 10.*</h2>
+      <h2 id="atualizao-do-php-no-mac-os-x">Atualização do PHP no MAC OS X</h2>
 
-<iframe src="//giphy.com/embed/jXBRQHjXsFVYY" width="480" height="370" frameborder="0" style="max-width: 100%" class="giphy-embed" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p>A forma mais fácil de atualizar o PHP do MAC OS X é seguir o passo a passo do site <a href="http://php-osx.liip.ch/">http://php-osx.liip.ch/</a></p>
 
-<p>Um tempo atrás apanhei pra instalar a extensão dbase para trabalhar com arquivos <code>shapes</code> no PHP.</p>
+<h2 id="instalando-o-oci8">Instalando o oci8</h2>
 
-<p>Depois descobri que é muito fácil instalar essas extensões. Segue o passo a passo.</p>
+<p>Faça o download dos arquivos do Oracle Client para MAC instantclient-basic-macosx-10.1.0.3.zip e instantclient-sdk-macosx-10.1.0.3.zip no link
+<a href="http://www.oracle.com/technetwork/topics/macsoft-088229.html">http://www.oracle.com/technetwork/topics/macsoft-088229.html</a>.</p>
 
-<p>Faça o download do arquivo <a href="https://pecl.php.net/get/dbase-5.1.0.tgz">https://pecl.php.net/get/dbase-5.1.0.tgz</a>. No meu caso ele foi parar na pasta “Downloads”</p>
+<p>Faça também o download do arquivo <a href="https://pecl.php.net/get/oci8-2.0.8.tgz">https://pecl.php.net/get/oci8-2.0.8.tgz</a>.</p>
 
-<p>Descompacte o arquivo dbase-5.0.1.tgz</p>
+<p>Descompacte os 3 arquivos no diretório <code>/opt/oracle/oci/</code>.</p>
 
-<p>Agora no terminal:</p>
+<p>Serão gerados 2 arquivos <code>instantclient10_1</code> e <code>instantclient10_1 2</code>, além da pasta <code>oci8-2.0.8</code>. Copie o conteúdo da pasta <code>instantclient10_1 2</code> para a pasta <code>instantclient10_1</code>.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>Downloads/dbase-5.0.1/dbase-5.0.1
+<p>Agora no terminal vá até a pasta <code>/opt/oracle/oci/instantclient10_1/</code> via terminal:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /opt/oracle/oci/instantclient10_1/
+<span class="nv">$ </span>ln -s libclntsh.so.10.1 libclntsh.so
+<span class="nv">$ </span>ln -s libocci.so.10.1 libocci.so
+<span class="nv">$ </span>ln -s libclntsh.dylib.10.1 libclntsh.dylib
+<span class="nv">$ </span><span class="nb">cd</span> ..
+<span class="nv">$ </span><span class="nb">cd </span>oci8-2.0.8/oci8-2.0.8/
 <span class="nv">$ </span>phpize
-<span class="nv">$ </span>./configure
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">ORACLE_HOME</span><span class="o">=</span>/opt/oracle/oci/instantclient10_1
+<span class="nv">$ </span>./configure --with-oci8<span class="o">=</span>share,instantclient,/opt/oracle/oci/instantclient10_1
 <span class="nv">$ </span>make
-<span class="nv">$ </span>make install
-<span class="nv">$ </span><span class="nb">echo </span><span class="nv">extension</span><span class="o">=</span>dbase.so &gt;&gt; /etc/php.ini
-<span class="nv">$ </span>sudo apachectl restart
-<span class="nv">$ </span>php -m <span class="c"># Listar as extensões instaladas</span></code></pre></div>
+<span class="nv">$ </span>sudo make install <span class="c"># voce devera informar o password ao executar esse comando</span>
+<span class="nv">$ </span><span class="nb">echo </span><span class="nv">extension</span><span class="o">=</span>oci8.so &gt;&gt; /usr/local/php5/lib/php.ini <span class="c"># add a linha com a extensao no php.ini</span>
+<span class="nv">$ </span>sudo apachectl restart <span class="c"># restart o servidor apache</span></code></pre></div>
 
-<p>O comando <code># php -m</code> lista as extensões instaladas no PHP. Veja se a extensão <code>dbase</code> foi listada.</p>
+<h2 id="para-instalar-o-dbase">Para instalar o dbase…</h2>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /usr/local/php5/bin/
+<span class="nv">$ </span>sudo ./pecl install dbase
+<span class="nv">$ </span>sudo apachectl restart <span class="c"># restart o servidor apache</span>
+<span class="nv">$ </span>php -m <span class="c"># para verificar se a extensao foi instalada</span></code></pre></div>
+
+<h2 id="problema-tpico-de-instalar-extenso-via-pecl">Problema típico de instalar extensão via <code>pecl</code></h2>
+
+<p>Algumas vezes ao instalar uma extensão via <code>pecl</code>, como a que foi usada acima para instalar o <code>dbase</code> ou o <code>oci8</code>, é informado a mensage:
+<code>No releases available for package...</code>. Neste caso basta setar o proxy (Lembrando que http://proxy:8080 é o proxy da minha rede. O seu proxy deve ser outra coisa):</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>pear config-set http_proxy http://proxy:80</code></pre></div>
 
 <h2 id="outra-forma-de-ver-as-extenses-instaladas-no-php">Outra forma de ver as extensões instaladas no PHP</h2>
 
@@ -191,15 +211,15 @@ o diretório de onde são instaladas as extensões PHP. Se tiver o arquvo <code>
 <p>Aquele abraço!</p>
 
       <footer class="entry-meta">
-        <span class="entry-tags"><a href="http://felipeneuhauss.github.io/tags/#proxy" title="Pages tagged proxy" class="tag">proxy</a><a href="http://felipeneuhauss.github.io/tags/#github" title="Pages tagged github" class="tag">github</a></span>
-        <span><a href="http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/" rel="bookmark" title="Proxy - Github">Proxy - Github</a> was published on <span class="entry-date date published updated"><time datetime="2015-04-23T00:00:00-03:00">April 23, 2015</time></span></span>
-        (revised: <span class="entry-date date modified"><time datetime="2014-14-10">2014-14-10</time></span>)
+        <span class="entry-tags"><a href="http://felipeneuhauss.github.io/tags/#oci8" title="Pages tagged oci8" class="tag">oci8</a><a href="http://felipeneuhauss.github.io/tags/#mac os" title="Pages tagged mac os" class="tag">mac os</a><a href="http://felipeneuhauss.github.io/tags/#php 5.6" title="Pages tagged php 5.6" class="tag">php 5.6</a></span>
+        <span><a href="http://felipeneuhauss.github.io/update-php56-oci8-and-dbase-mac-os/" rel="bookmark" title="Atualizando PHP para o 5.6 e instalando o oci8 e dbase">Atualizando PHP para o 5.6 e instalando o oci8 e dbase</a> was published on <span class="entry-date date published updated"><time datetime="2015-10-28T00:00:00-02:00">October 28, 2015</time></span></span>
+        (revised: <span class="entry-date date modified"><time datetime="2015-28-10">2015-28-10</time></span>)
         <span class="author vcard"><span class="fn"><a href="http://felipeneuhauss.github.io/about/" title="About Felipe Neuhauss">Felipe Neuhauss</a></span></span>
         <div class="social-share">
           <ul class="socialcount socialcount-small inline-list">
-            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-            <!--<li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>-->
-            <!--<li class="googleplus"><a href="https://plus.google.com/share?url=http://felipeneuhauss.github.io/install-dbase-extension-mac-os-yosemite/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>-->
+            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://felipeneuhauss.github.io/update-php56-oci8-and-dbase-mac-os/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+            <!--<li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://felipeneuhauss.github.io/update-php56-oci8-and-dbase-mac-os/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>-->
+            <!--<li class="googleplus"><a href="https://plus.google.com/share?url=http://felipeneuhauss.github.io/update-php56-oci8-and-dbase-mac-os/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>-->
           </ul>
         </div><!-- /.social-share -->
       </footer>
