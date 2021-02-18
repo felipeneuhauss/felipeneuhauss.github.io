@@ -1,74 +1,57 @@
-title:            felipeneuhauss
-description:      Diário de codificação.
-disqus_shortname: true
-reading_time:     true
-words_per_minute: 200
-#Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://felipeneuhauss.github.io
+site: Journal Jekyll Theme
 
-# Owner/author information
-owner:
-  name:           Felipe Neuhauss
-  avatar:         avatar.png
-  bio:            "Bacharel em Sistemas de Informações, com especialização em Gerenciamento de Projetos - PMBoK. Possui mais de 7 anos de experiência em TI trabalhando na pesquisa, planejamento, análise e desenvolvimento de sistemas e aplicativos web em empresas e organizações como: Tribunal de Contas da União, Receita Federal, Centro de Apoio ao Desenvolvimento Tecnológico da Universidade de Brasília, Ministério da Educação, General Motors, Grupo JBS Friboi, Flora Higiene e Limpeza, CDS - Condomínio de Soluções Corporativas e Grupo 954.
-                   Participou como co-founder da Izie, uma Startup Brasileira focada no mercado de soluções para a Venda Direta."
-  email:          felipe.neuhauss@gmail.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook: felipeneuhauss
-  github:   felipe
-  stackexchange:  
-  linkedin: br.linkedin.com/in/felipeneuhauss/
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+url: 
+baseurl: 
 
-# Background image to be tiled on all pages
-background: 
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug
+  projects:
+    output: true
+    permalink: /project/:slug
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Theme Setup
-    url: /theme-setup
-  - title: External Link
-    url: http://mademistakes.com
-    external: true
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/Sao_Paulo
-future:      true
-highlighter: pygments
-markdown:    kramdown
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
-
-# Amount of post to show on home page
-paginate: 5
+markdown: kramdown
 
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: true
+  input: GFM
+  syntax_highlighter: rouge
+  
+sass:
+  style: compressed
 
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+paginate: 6
+paginate_path: "/blog/page:num/"
+  
