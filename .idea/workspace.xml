@@ -2,94 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="460be2a0-4c8e-445c-b988-c9e164b1b4c7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/2018-06-30-demo-post.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_projects/2020-03-30-viaconsultas.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_projects/2020-11-30-falcao.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_projects/2021-01-30-showdefesta.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/projects/falcao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/projects/fidelix.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/projects/showdefesta.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/projects/viaconsultas.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/browser-upgrade.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/disqus_comments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/settings.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/settings.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/navigation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/scripts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post-index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2014-10-05-php-oracle-varias-coordenadas.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2014-10-08-redbean-php-basic.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2014-10-14-redbean-php-advanced.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2014-10-20-proxy-github.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2015-10-28-update-php56-oci8-and-dbase-mac-os.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_base.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_syntax-highlighting.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/contact.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/contact.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/2018-06-30-demo-project.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2019-07-30-fidelix.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/3953273590_704e3899d5_m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/abstract-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/abstract-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/abstract-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/abstract-12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/abstract-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/abstract-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/abstract-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/abstract-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/abstract-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/abstract-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/abstract-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/apple-touch-icon-114x114-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/apple-touch-icon-144x144-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/apple-touch-icon-72x72-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/apple-touch-icon-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/avatar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/hpstr-jekyll-theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/ps_neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/triangular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/twitter-card-summary-large-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/witewall_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/images/zf-logo.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/php-oracle-varias-coordenadas/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/posts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/proxy-github/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/redbean-php-advanced/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/redbean-php-basic/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tags/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/theme-setup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/theme-setup/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/update-php56-oci8-and-dbase-mac-os/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/3953273590_704e3899d5_m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/abstract-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/abstract-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/abstract-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/abstract-12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/abstract-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/abstract-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/abstract-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/abstract-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/abstract-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/abstract-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/abstract-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/apple-touch-icon-114x114-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/apple-touch-icon-144x144-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/apple-touch-icon-72x72-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/apple-touch-icon-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/avatar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/hpstr-jekyll-theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ps_neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/triangular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/twitter-card-summary-large-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/witewall_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/zf-logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +46,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -381,7 +322,13 @@
   <component name="PropertiesComponent">
     <property name="FullScreen" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_posts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/projects" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="options.lastSelected" value="vcs.Subversion" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -390,6 +337,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/projects" />
+      <recent name="$PROJECT_DIR$/_projects" />
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
@@ -424,6 +373,7 @@
       <option name="presentableId" value="Default" />
       <updated>1411068618066</updated>
       <workItem from="1613658627194" duration="456000" />
+      <workItem from="1613928082870" duration="3824000" />
     </task>
     <servers />
   </component>
@@ -466,6 +416,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">

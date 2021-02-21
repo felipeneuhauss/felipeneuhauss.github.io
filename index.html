@@ -5,29 +5,34 @@ description: Software development
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
-<section class="blog single">
+<section class="portfolio">
 
 	<div class="wrap">
 
-		{% for post in paginator.posts %}
+		{% for project in site.projects reversed %}
 
-		<article class="blog-post">
+		<div class="portfolio-item">
 
-			<div class="blog-post__header">
-				<h2 class="blog-post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-				<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
+			<div class="portfolio-post__header">
+				<h2 class="portfolio-post__title"><a href="{{ post.url | relative_url }}">{{ project.title }}</a></h2>
+				<p class="blog-post__subtitle">{{ project.subtitle }}</p>
+				<p class="blog-post__subtitle">{{ project.date | date_to_long_string }}</p>
 			</div>
 
-			{% if post.featured_image %}
-			<a href="{{ post.url | relative_url }}" class="blog-post__image" style="background-image: url({{ post.featured_image | relative_url }});"></a>
-			{% endif %}
+			<a class="portfolio-item__link" href="{{ project.url | relative_url }}">
 
-			<div class="blog-post__content">
-				<p>{{ post.excerpt }}</p>
-				<p><a href="{{ post.url | relative_url }}" class="button">Read More</a>
-			</div>
+				<div class="portfolio-item__image" style="background-image: url({{ project.featured_image | relative_url }});"></div>
 
-		</article>
+				<div class="portfolio-item__content">
+					<div class="portfolio-item__info">
+						<h2 class="portfolio-item__title">{{ project.title }}</h2>
+						<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
+					</div>
+				</div>
+
+			</a>
+
+		</div>
 
 		{% endfor %}
 

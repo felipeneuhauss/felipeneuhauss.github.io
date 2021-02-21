@@ -1,7 +1,10 @@
-site: Journal Jekyll Theme
+site: neuh.dev
 
-url: 
-baseurl: 
+title: Neuh.dev - Value First
+description: Software development Focused on Value.
+disqus_shortname: shortname
+url: https://neuh.dev
+baseurl:
 
 collections:
   pages:
@@ -44,7 +47,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  
+
 sass:
   style: compressed
 
@@ -54,4 +57,3 @@ plugins:
 
 paginate: 6
 paginate_path: "/blog/page:num/"
-  
