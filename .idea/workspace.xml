@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="460be2a0-4c8e-445c-b988-c9e164b1b4c7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_projects/2020-03-30-viaconsultas.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_projects/2020-11-30-falcao.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_projects/2021-01-30-showdefesta.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/projects/falcao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/projects/fidelix.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/projects/showdefesta.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/projects/viaconsultas.jpg" afterDir="false" />
+    <list default="true" id="460be2a0-4c8e-445c-b988-c9e164b1b4c7" name="Default" comment="feat: new features">
+      <change afterPath="$PROJECT_DIR$/images/demo/landscape-2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/demo/landscape.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/demo/me.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/settings.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/settings.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/contact.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/contact.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/2018-06-30-demo-project.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/2019-07-30-fidelix.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/theme-setup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/theme-setup/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -322,7 +307,7 @@
   <component name="PropertiesComponent">
     <property name="FullScreen" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -337,11 +322,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/demo" />
       <recent name="$PROJECT_DIR$/images/projects" />
       <recent name="$PROJECT_DIR$/_projects" />
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_drafts" />
@@ -373,8 +358,16 @@
       <option name="presentableId" value="Default" />
       <updated>1411068618066</updated>
       <workItem from="1613658627194" duration="456000" />
-      <workItem from="1613928082870" duration="3824000" />
+      <workItem from="1613928082870" duration="4441000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: new features">
+      <created>1613932263620</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613932263620</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -425,6 +418,10 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: new features" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: new features" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_drafts/2013-05-23-readability-feature-post.md">
