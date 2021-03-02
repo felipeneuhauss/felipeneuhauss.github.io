@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="460be2a0-4c8e-445c-b988-c9e164b1b4c7" name="Default" comment="feat: pictures">
+    <list default="true" id="460be2a0-4c8e-445c-b988-c9e164b1b4c7" name="Default" comment="feat: new info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
@@ -355,7 +355,7 @@
       <updated>1411068618066</updated>
       <workItem from="1613658627194" duration="456000" />
       <workItem from="1613928082870" duration="4849000" />
-      <workItem from="1614680552767" duration="70000" />
+      <workItem from="1614680552767" duration="451000" />
     </task>
     <task id="LOCAL-00001" summary="feat: new features">
       <created>1613932263620</created>
@@ -378,7 +378,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613933370728</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: new info">
+      <created>1614680636033</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614680636033</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: new info">
+      <created>1614680668224</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614680668224</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -433,7 +447,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: new features" />
     <MESSAGE value="feat: pictures" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: pictures" />
+    <MESSAGE value="feat: new info" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: new info" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_drafts/2013-05-23-readability-feature-post.md">
