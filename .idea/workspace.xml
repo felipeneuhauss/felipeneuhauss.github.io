@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="460be2a0-4c8e-445c-b988-c9e164b1b4c7" name="Default" comment="feat: pictures" />
+    <list default="true" id="460be2a0-4c8e-445c-b988-c9e164b1b4c7" name="Default" comment="feat: pictures">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -350,7 +354,8 @@
       <option name="presentableId" value="Default" />
       <updated>1411068618066</updated>
       <workItem from="1613658627194" duration="456000" />
-      <workItem from="1613928082870" duration="4524000" />
+      <workItem from="1613928082870" duration="4849000" />
+      <workItem from="1614680552767" duration="70000" />
     </task>
     <task id="LOCAL-00001" summary="feat: new features">
       <created>1613932263620</created>
@@ -366,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613933304423</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: pictures">
+      <created>1613933370728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613933370728</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
