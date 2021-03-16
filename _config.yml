@@ -4,7 +4,7 @@ title: Neuh.dev - Value First
 description: Software development Focused on Valuable Delivery
 disqus_shortname: shortname
 url: https://neuh.dev
-baseurl:
+baseurl: about
 
 collections:
   pages:
@@ -22,25 +22,7 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
+      layout: "about"
 
 markdown: kramdown
 

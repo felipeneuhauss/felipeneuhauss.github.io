@@ -10,14 +10,14 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Projects'
-      url: '/'
+#    - title: 'Projects'
+#      url: '/'
 #    - title: 'Projects'
 #      url: '/projects/'
     - title: 'About'
-      url: '/about'
-    - title: 'Contact'
-      url: '/contact'
+      url: '/'
+#    - title: 'Contact'
+#      url: '/contact'
 
 grid_settings:
   grid_spacing: 10

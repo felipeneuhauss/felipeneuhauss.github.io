@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="460be2a0-4c8e-445c-b988-c9e164b1b4c7" name="Default" comment="feat: new info">
+    <list default="true" id="460be2a0-4c8e-445c-b988-c9e164b1b4c7" name="Default" comment="feat: new info added">
+      <change afterPath="$PROJECT_DIR$/_pages/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/settings.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/settings.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/theme-setup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/theme-setup/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +311,7 @@
   <component name="PropertiesComponent">
     <property name="FullScreen" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -318,11 +326,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_pages" />
       <recent name="$PROJECT_DIR$/images/demo" />
       <recent name="$PROJECT_DIR$/images/projects" />
       <recent name="$PROJECT_DIR$/_projects" />
       <recent name="$PROJECT_DIR$/_posts" />
-      <recent name="$PROJECT_DIR$/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_drafts" />
@@ -355,7 +363,8 @@
       <updated>1411068618066</updated>
       <workItem from="1613658627194" duration="456000" />
       <workItem from="1613928082870" duration="4849000" />
-      <workItem from="1614680552767" duration="451000" />
+      <workItem from="1614680552767" duration="1062000" />
+      <workItem from="1615929442457" duration="1632000" />
     </task>
     <task id="LOCAL-00001" summary="feat: new features">
       <created>1613932263620</created>
@@ -392,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614680668224</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: new info added">
+      <created>1614681062650</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614681062650</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -448,7 +464,8 @@
     <MESSAGE value="feat: new features" />
     <MESSAGE value="feat: pictures" />
     <MESSAGE value="feat: new info" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: new info" />
+    <MESSAGE value="feat: new info added" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: new info added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_drafts/2013-05-23-readability-feature-post.md">

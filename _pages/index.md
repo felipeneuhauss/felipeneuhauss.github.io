@@ -1,7 +1,7 @@
 ---
 title: About me
 subtitle: I am a web software company focused on scalable valuable product development  
-featured_image: /images/demo/demo-portrait.jpg
+featured_image: /images/demo/me.png
 ---
 
 [comment]: <> (![]&#40;/images/demo/demo-landscape.jpg&#41;)
